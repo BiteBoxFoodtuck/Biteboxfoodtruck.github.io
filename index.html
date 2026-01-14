@@ -3,61 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <title>Bite Box</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 20px;
+      background: black;
+    }
+
+    header img {
+      max-width: 250px;
+    }
+
+    h1, h2 {
+      color: #ffd400;
+      margin-top: 40px;
+    }
+
+    .section {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .price {
+      color: #ffd400;
+      font-weight: bold;
+    }
+
+    footer {
+      background: black;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Bite Box</h1>
-<p>Streetfood från vår foodtruck</p>
 
-<h2>Burgare</h2>
+<header>
+  <img src="logo.png" alt="Bite Box">
+</header>
 
-<p><b>Cheeseburger</b><br>
-150g burgare, ost, sallad, saltgurka & dressing<br>
-<b>75 kr / 119 kr</b></p>
+<div class="section">
+  <h1>Meny</h1>
 
-<p><b>Bacon Burger</b><br>
-Burgare med bacon, ost, rostad lök & dressing<br>
-<b>80 kr / 129 kr</b></p>
+  <h2>Burgare</h2>
 
-<p><b>Chicken Burger</b><br>
-Krispig kyckling, chili mayo, ranch & ost<br>
-<b>80 kr / 129 kr</b></p>
+  <div class="item">
+    <b>Cheeseburger</b><br>
+    150g burgare, ost, sallad & dressing<br>
+    <span class="price">75 kr / 119 kr</span>
+  </div>
 
-<p><b>Chili Burger</b><br>
-Burgare, jalapeños, pepper jack & chili mayo<br>
-<b>80 kr / 129 kr</b></p>
+  <div class="item">
+    <b>Bacon Burger</b><br>
+    Bacon, ost, rostad lök & dressing<br>
+    <span class="price">80 kr / 129 kr</span>
+  </div>
 
-<h2>Sides</h2>
+  <div class="item">
+    <b>Chicken Burger</b><br>
+    Krispig kyckling, chili mayo & ranch<br>
+    <span class="price">80 kr / 129 kr</span>
+  </div>
 
-<p><b>Wings</b><br>
-5 st 65 kr | 10 st 129 kr</p>
+  <h2>Sides</h2>
 
-<p><b>Chicken Tenders</b><br>
-3 st 35 kr | 6 st 70 kr | 9 st 105 kr</p>
+  <div class="item">
+    <b>Dirty Fries</b><br>
+    Cheddar, ranch, jalapeño & bacon<br>
+    <span class="price">65 kr</span>
+  </div>
 
-<p><b>Dirty Fries</b><br>
-Pommes med cheddar, ranch, jalapeño & bacon<br>
-65 kr</p>
+  <div class="item">
+    <b>Wings</b><br>
+    5 st 65 kr | 10 st 129 kr
+  </div>
 
-<h2>Extra</h2>
+  <h2>Öppettider</h2>
+  <p>Mån–Lör<br>11–14 & 16–21</p>
 
-<p>Dipper – 15 kr<br>
-Ranch, Vitlök, Chili Mayo, Ketchup, Majonnäs, Bea</p>
+  <h2>Adress</h2>
+  <p>
+    Blåklintsvägen 36 (11–14)<br>
+    Slättåkra Bastuväg 2 (16–21)
+  </p>
+</div>
 
-<p>Extra bacon +5 kr<br>
-Extra ost +5 kr</p>
-
-<h2>Öppettider</h2>
-<p>
-Mån–Lör<br>
-11–14<br>
-16–21
-</p>
-
-<h2>Adress</h2>
-<p>
-Blåklintsvägen 36 (11–14)<br>
-Slättåkra Bastuväg 2 (16–21)
-</p>
+<footer>
+  © Bite Box Foodtruck
+</footer>
 
 </body>
 </html>
