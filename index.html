@@ -3,30 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bite Box</title>
+<title>Bite Box Foodtruck</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #111;
+  background: #0d0d0d;
   color: white;
 }
 
 /* NAVBAR */
 nav {
   position: fixed;
-  width: 100%;
   top: 0;
+  width: 100%;
   background: rgba(0,0,0,0.9);
   padding: 15px;
   text-align: center;
-  z-index: 1000;
 }
 
 nav a {
   color: #ffd400;
-  margin: 0 20px;
+  margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -34,25 +33,29 @@ nav a {
 /* HERO */
 .hero {
   height: 100vh;
-  background: url("menu.png") center/cover no-repeat;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+              url("menu.png") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .hero img {
-  width: 220px;
+  width: 200px;
   margin-bottom: 20px;
 }
 
 .hero h1 {
-  font-size: 60px;
+  font-size: 50px;
   color: #ffd400;
-  margin: 0;
 }
 
-/* BUTTON */
+.hero p {
+  font-size: 18px;
+}
+
 .btn {
   margin-top: 20px;
   padding: 15px 30px;
@@ -66,18 +69,25 @@ nav a {
 /* SECTION */
 .section {
   padding: 80px 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
+}
+
+/* MENU GRID */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
 }
 
 h2 {
   color: #ffd400;
-}
-
-/* MENU */
-.menu-item {
-  margin-bottom: 20px;
-  font-size: 18px;
 }
 
 .price {
@@ -97,7 +107,6 @@ footer {
 
 <body>
 
-<!-- NAV -->
 <nav>
   <a href="#menu">Meny</a>
   <a href="#info">Info</a>
@@ -105,51 +114,69 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-  <img src="logo.png" alt="Bite Box">
-  <h1>BITE BOX</h1>
-  <a href="tel:0700000000" class="btn">📞 Ring & Beställ</a>
+  <img src="logo.png">
+  <h1>BITE BOX FOODTRUCK</h1>
+  <p>Street Combo – 149 kr</p>
+  <p>Alla menyer inkluderar pommes & 33cl dryck</p>
+  <a href="tel:0707514695" class="btn">📞 Ring & Beställ</a>
 </div>
 
 <!-- MENU -->
 <div class="section" id="menu">
+
   <h2>Burgare</h2>
+  <div class="menu-grid">
 
-  <div class="menu-item">
-    Cheeseburger<br>
-    <span class="price">75 / 119 kr</span>
+    <div class="card">
+      <b>Bite Classic Smash</b><br>
+      <span class="price">75 kr / Meny 129 kr</span><br>
+      Smash beef, cheddar, pickles, house-sås
+    </div>
+
+    <div class="card">
+      <b>Bite Bacon</b><br>
+      <span class="price">80 kr / Meny 139 kr</span>
+    </div>
+
+    <div class="card">
+      <b>Bite Chili</b><br>
+      <span class="price">80 kr / Meny 139 kr</span>
+    </div>
+
+    <div class="card">
+      <b>Bite Chicken</b><br>
+      <span class="price">80 kr / Meny 139 kr</span>
+    </div>
+
   </div>
 
-  <div class="menu-item">
-    Bacon Burger<br>
-    <span class="price">80 / 129 kr</span>
-  </div>
-
-  <div class="menu-item">
-    Chicken Burger<br>
-    <span class="price">80 / 129 kr</span>
+  <h2>Loaded Fries</h2>
+  <div class="menu-grid">
+    <div class="card">Veckans Loaded – 129 kr</div>
+    <div class="card">Dirty Mix Fries – 129 kr</div>
   </div>
 
   <h2>Sides</h2>
-
-  <div class="menu-item">
-    Wings – 65 / 129 kr
+  <div class="menu-grid">
+    <div class="card">Dirty Fries – 75 kr</div>
+    <div class="card">Salted Fries – 45 kr</div>
+    <div class="card">Nuggets – 105 kr</div>
   </div>
 
-  <div class="menu-item">
-    Dirty Fries – 65 kr
+  <h2>Kids</h2>
+  <div class="menu-grid">
+    <div class="card">Kids Burgare – 75–105 kr</div>
+    <div class="card">Kids Nuggets – 70–89 kr</div>
   </div>
+
 </div>
 
 <!-- INFO -->
 <div class="section" id="info">
-  <h2>Öppettider</h2>
-  <p>Mån–Lör 11–14 & 16–21</p>
-
-  <h2>Adress</h2>
-  <p>
-    Blåklintsvägen 36<br>
-    Slättåkra Bastuväg 2
-  </p>
+  <h2>Kontakt</h2>
+  <p>📞 070-751 46 95</p>
+  <p>Instagram: bite_box_food_truck</p>
+  <p>TikTok: @bite.box.foodtruck</p>
 </div>
 
 <footer>
