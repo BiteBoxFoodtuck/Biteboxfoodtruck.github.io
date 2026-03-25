@@ -1,105 +1,132 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <title>Bite Box</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bite Box</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #111;
-      color: white;
-      text-align: center;
-    }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+}
 
-    header {
-      padding: 20px;
-      background: black;
-    }
+/* HERO */
+.hero {
+  background: url("menu.png") center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
 
-    header img {
-      max-width: 250px;
-    }
+.hero h1 {
+  font-size: 60px;
+  color: #ffd400;
+  background: rgba(0,0,0,0.7);
+  padding: 20px;
+}
 
-    h1, h2 {
-      color: #ffd400;
-      margin-top: 40px;
-    }
+/* NAV */
+nav {
+  background: black;
+  padding: 15px;
+  text-align: center;
+}
 
-    .section {
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-    }
+nav a {
+  color: #ffd400;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    .item {
-      margin-bottom: 20px;
-    }
+/* SECTION */
+.section {
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    .price {
-      color: #ffd400;
-      font-weight: bold;
-    }
+h2 {
+  color: #ffd400;
+}
 
-    footer {
-      background: black;
-      padding: 20px;
-      margin-top: 40px;
-      font-size: 14px;
-    }
-  </style>
+/* MENU */
+.menu-item {
+  margin-bottom: 20px;
+}
+
+.price {
+  color: #ffd400;
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  background: black;
+  padding: 20px;
+  text-align: center;
+}
+</style>
+
 </head>
 
 <body>
 
-<header>
-  <img src="logo.png" alt="Bite Box">
-</header>
+<!-- NAVBAR -->
+<nav>
+  <a href="#menu">Meny</a>
+  <a href="#info">Info</a>
+</nav>
 
-<div class="section">
-  <h1>Meny</h1>
+<!-- HERO -->
+<div class="hero">
+  <h1>BITE BOX</h1>
+</div>
 
+<!-- MENU -->
+<div class="section" id="menu">
   <h2>Burgare</h2>
 
-  <div class="item">
-    <b>Cheeseburger</b><br>
-    150g burgare, ost, sallad & dressing<br>
-    <span class="price">75 kr / 119 kr</span>
+  <div class="menu-item">
+    Cheeseburger<br>
+    <span class="price">75 / 119 kr</span>
   </div>
 
-  <div class="item">
-    <b>Bacon Burger</b><br>
-    Bacon, ost, rostad lök & dressing<br>
-    <span class="price">80 kr / 129 kr</span>
+  <div class="menu-item">
+    Bacon Burger<br>
+    <span class="price">80 / 129 kr</span>
   </div>
 
-  <div class="item">
-    <b>Chicken Burger</b><br>
-    Krispig kyckling, chili mayo & ranch<br>
-    <span class="price">80 kr / 129 kr</span>
+  <div class="menu-item">
+    Chicken Burger<br>
+    <span class="price">80 / 129 kr</span>
   </div>
 
   <h2>Sides</h2>
 
-  <div class="item">
-    <b>Dirty Fries</b><br>
-    Cheddar, ranch, jalapeño & bacon<br>
-    <span class="price">65 kr</span>
+  <div class="menu-item">
+    Wings – 65 / 129 kr
   </div>
 
-  <div class="item">
-    <b>Wings</b><br>
-    5 st 65 kr | 10 st 129 kr
+  <div class="menu-item">
+    Dirty Fries – 65 kr
   </div>
+</div>
 
+<!-- INFO -->
+<div class="section" id="info">
   <h2>Öppettider</h2>
   <p>Mån–Lör<br>11–14 & 16–21</p>
 
   <h2>Adress</h2>
   <p>
-    Blåklintsvägen 36 (11–14)<br>
-    Slättåkra Bastuväg 2 (16–21)
+    Blåklintsvägen 36<br>
+    Slättåkra Bastuväg 2
   </p>
 </div>
 
@@ -109,4 +136,3 @@
 
 </body>
 </html>
-
