@@ -13,40 +13,42 @@ body {
   color: white;
 }
 
-/* HERO */
+/* HERO (stor startsida) */
 .hero {
+  height: 100vh;
   background: url("menu.png") center/cover no-repeat;
-  height: 80vh;
   display: flex;
-  align-items: center;
   justify-content: center;
-  text-align: center;
+  align-items: center;
 }
 
 .hero h1 {
-  font-size: 60px;
-  color: #ffd400;
+  font-size: 70px;
   background: rgba(0,0,0,0.7);
   padding: 20px;
+  color: #ffd400;
 }
 
-/* NAV */
+/* NAVBAR */
 nav {
+  position: fixed;
+  width: 100%;
   background: black;
+  top: 0;
   padding: 15px;
   text-align: center;
 }
 
 nav a {
   color: #ffd400;
-  margin: 0 15px;
+  margin: 0 20px;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* SECTION */
+/* SECTIONS */
 .section {
-  padding: 40px;
+  padding: 80px 20px;
   max-width: 900px;
   margin: auto;
 }
@@ -55,7 +57,6 @@ h2 {
   color: #ffd400;
 }
 
-/* MENU */
 .menu-item {
   margin-bottom: 20px;
 }
@@ -68,7 +69,7 @@ h2 {
 /* FOOTER */
 footer {
   background: black;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
 }
 </style>
@@ -77,7 +78,7 @@ footer {
 
 <body>
 
-<!-- NAVBAR -->
+<!-- NAV -->
 <nav>
   <a href="#menu">Meny</a>
   <a href="#info">Info</a>
@@ -93,17 +94,17 @@ footer {
   <h2>Burgare</h2>
 
   <div class="menu-item">
-    Cheeseburger<br>
+    Cheeseburger <br>
     <span class="price">75 / 119 kr</span>
   </div>
 
   <div class="menu-item">
-    Bacon Burger<br>
+    Bacon Burger <br>
     <span class="price">80 / 129 kr</span>
   </div>
 
   <div class="menu-item">
-    Chicken Burger<br>
+    Chicken Burger <br>
     <span class="price">80 / 129 kr</span>
   </div>
 
@@ -121,7 +122,7 @@ footer {
 <!-- INFO -->
 <div class="section" id="info">
   <h2>Öppettider</h2>
-  <p>Mån–Lör<br>11–14 & 16–21</p>
+  <p>Mån–Lör 11–14 & 16–21</p>
 
   <h2>Adress</h2>
   <p>
@@ -131,7 +132,7 @@ footer {
 </div>
 
 <footer>
-  © Bite Box Foodtruck
+  © Bite Box
 </footer>
 
 </body>
